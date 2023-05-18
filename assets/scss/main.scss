@@ -1357,6 +1357,32 @@
   }
 }
 
+//updated research wrapper css code for actual ordering section
+@media screen and (max-width: 991px) {
+  .research-wrapper.f-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+//updated research wrapper for sitemap and information architecture
+.research-wrapper.sitemap-info {
+  .research-content {
+    width: 30%;
+  }
+  .research-image {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 991px) {
+    .research-content {
+      width: 100%;
+    }
+    .research-image {
+      width: 100%;
+    }
+  }
+}
+
 // Interview
 .interview-content {
   p {
@@ -1583,7 +1609,7 @@
   }
 }
 
-//single screen for linkedin page updated at 5-18-2023
+//single screen for linkedin page updated at 5-11-2023
 .single-screen.new-email-design {
   display: flex;
   flex-direction: row;
@@ -1598,12 +1624,26 @@
   flex-direction: row;
 }
 
+//single screen new code for self-service portal: Employe updated at 11-05-2023
+.single-screen.self-service {
+  display: flex;
+}
+
+@media screen and (max-width: 991px) {
+  .single-screen.self-service {
+    display: grid;
+    .single-screen-content {
+      margin: unset;
+    }
+  }
+}
+
 // Responsvie
 @media screen and (max-width: 767px) {
   .single-screen {
-    flex-direction: row;
+    flex-direction: column;
     &:nth-child(even) {
-      flex-direction: row;
+      flex-direction: column;
     }
   }
   .single-screen-thumb {

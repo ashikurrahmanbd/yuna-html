@@ -143,7 +143,9 @@ p {
 .container-fluid {
   padding: 0px 20px;
 }
-
+.s-py-0-50 {
+  padding: 0 0 50px;
+}
 .s-py-100 {
   padding: 100px 0px;
 }
@@ -185,6 +187,10 @@ p {
 }
 
 @media screen and (max-width: 991px) {
+  .s-py-0-50 {
+    padding: 0 0 50px;
+  }
+
   .s-py-100 {
     padding: 70px 0px;
   }
@@ -295,7 +301,7 @@ p {
 
 .page-v2 {
   .page-bg-primary {
-    background-color: #2980b9;
+    background-color: #39aacb;
   }
   .page-color-primary {
     color: #2980b9;
