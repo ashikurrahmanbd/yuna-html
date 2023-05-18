@@ -2,13 +2,13 @@
 	Template Name: Starter Project Template.
 -------------------------------------------------------------------------------*/
 /* Default Css */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
 body {
   color: #181818;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  background-color: #D7E3EB;
+  font-weight: 300;
+  background-color: #d7e3eb;
 }
 
 img {
@@ -302,11 +302,11 @@ p:last-child {
   }
 }
 .page-bg-primary {
-  background-color: #fe0000;
+  background-color: #0a66c2;
 }
 
 .page-color-primary {
-  color: #fe0000;
+  color: #0a66c2;
 }
 
 .page-v2 .page-bg-primary {
@@ -392,7 +392,7 @@ p:last-child {
 }
 
 .header-wrapper {
-  padding: 0px 150px;
+  padding: 0px 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -514,7 +514,7 @@ p:last-child {
   font-weight: 700;
 }
 .banner-wrapper h2 .name {
-  color: #DE1F00;
+  color: #de1f00;
   text-decoration: underline;
 }
 .banner-wrapper h2 .hand {
@@ -597,7 +597,8 @@ p:last-child {
   .banner-wrapper {
     text-align: center;
   }
-  .banner-wrapper h2, .banner-wrapper p {
+  .banner-wrapper h2,
+  .banner-wrapper p {
     font-size: 30px;
   }
   .banner-wrapper .group {
@@ -610,7 +611,8 @@ p:last-child {
   .banner-area {
     padding: 100px 0px;
   }
-  .banner-wrapper h2, .banner-wrapper p {
+  .banner-wrapper h2,
+  .banner-wrapper p {
     font-size: 24px;
   }
   .banner-wrapper .group {
@@ -689,7 +691,7 @@ p:last-child {
 
 .single-pjct-content {
   flex: 1;
-  padding: 25px 15px 25px 5px;
+  padding: 25px 15px 25px 15px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -793,7 +795,7 @@ p:last-child {
 .thanks-content h4 a {
   font-weight: 700;
   text-decoration: underline;
-  color: #DE1F00;
+  color: #de1f00;
 }
 
 @media screen and (max-width: 991px) {
@@ -855,7 +857,7 @@ p:last-child {
 }
 .about-banner-top-content h1 span {
   font-weight: 600;
-  color: #DE1F00;
+  color: #de1f00;
 }
 
 .about-banner-wrap {
@@ -1078,7 +1080,7 @@ p:last-child {
 .google-banner-content h4 {
   font-size: 22px;
   font-weight: 600;
-  color: #4285F4;
+  color: #4285f4;
 }
 .google-banner-content .single-content {
   margin-top: 20px;
@@ -1168,7 +1170,7 @@ p:last-child {
   font-weight: 200;
 }
 .architecture-banner-content h1 span {
-  color: #DE1F00;
+  color: #de1f00;
   font-weight: 400;
 }
 .architecture-banner-content h1 a {
@@ -1274,7 +1276,9 @@ p:last-child {
 .arc-single-project .content div h4 a {
   color: #000;
 }
-.arc-single-project .content div h2, .arc-single-project .content div span, .arc-single-project .content div h4 {
+.arc-single-project .content div h2,
+.arc-single-project .content div span,
+.arc-single-project .content div h4 {
   transform: translateY(50px);
   opacity: 0;
   visibility: hidden;
@@ -1285,7 +1289,9 @@ p:last-child {
 .arc-single-project:hover img {
   transform: scale(1.1);
 }
-.arc-single-project:hover div h2, .arc-single-project:hover div span, .arc-single-project:hover div h4 {
+.arc-single-project:hover div h2,
+.arc-single-project:hover div span,
+.arc-single-project:hover div h4 {
   transform: translateY(0px);
   opacity: 1;
   visibility: visible;
@@ -1389,7 +1395,7 @@ p:last-child {
 }
 
 .page-about-content {
-  max-width: 60%;
+  max-width: 70%;
   width: 100%;
 }
 .page-about-content h4 {
@@ -1410,7 +1416,7 @@ p:last-child {
 }
 
 .page-about-list {
-  max-width: 40%;
+  max-width: 30%;
   width: 100%;
 }
 .page-about-list h4 {
@@ -1606,14 +1612,6 @@ p:last-child {
   margin-bottom: 0;
 }
 
-.research-image {
-  max-width: 600px;
-  width: 100%;
-}
-.research-image img {
-  width: 100%;
-}
-
 @media screen and (max-width: 991px) {
   .research-wrapper {
     flex-direction: column;
@@ -1627,7 +1625,8 @@ p:last-child {
   .research-content .section-title {
     margin-bottom: 20px;
   }
-  .research-content p, .research-content ol {
+  .research-content p,
+  .research-content ol {
     margin-bottom: 20px;
   }
   .interview-content p {
@@ -1848,12 +1847,27 @@ p:last-child {
   font-weight: 400;
 }
 
+.single-screen.new-email-design {
+  display: flex;
+  flex-direction: row;
+}
+
+.single-screen.optimized-authoring {
+  display: flex;
+  flex-direction: row;
+}
+
+.single-screen.auto-suggest {
+  display: flex;
+  flex-direction: row;
+}
+
 @media screen and (max-width: 767px) {
   .single-screen {
-    flex-direction: column;
+    flex-direction: row;
   }
   .single-screen:nth-child(even) {
-    flex-direction: column;
+    flex-direction: row;
   }
   .single-screen-thumb {
     max-width: 100%;
@@ -1909,18 +1923,16 @@ body.carefirst .page-about-content {
 }
 .research-wrapper-2 .research-image {
   margin: auto;
+  max-width: 100%;
+  width: 100%;
 }
 .research-wrapper-2 .research-image img {
-  max-width: 600px;
+  max-width: 100%;
 }
 
 .page-analysis-area-2 .page-analysis-thumb img {
   max-width: 600px;
   width: 100%;
-}
-
-.page-analysis-area-2.persona {
-  margin-bottom: 100px;
 }
 
 .imagination-area-2 p {
@@ -1946,15 +1958,6 @@ body.colligo .page-points-wrapper {
 body.colligo .page-points-wrapper .single-page-point {
   width: 260px;
   height: 260px;
-}
-
-.page-roadmap-content img,
-.research-image img,
-.page-analysis-thumb img,
-.single-screen-thumb img,
-.page-jurny-content img,
-.page-about-list img {
-  border: 1px solid #ccc;
 }
 
 .text-reflow {
@@ -2012,7 +2015,9 @@ body.linkedin .page-statement-content p {
   margin-top: 35px;
   font-size: 15px;
 }
-body.linkedin .page-about-list h4.time-line, body.linkedin .page-about-list h4.colla, body.linkedin .page-about-list h4.p-goal {
+body.linkedin .page-about-list h4.time-line,
+body.linkedin .page-about-list h4.colla,
+body.linkedin .page-about-list h4.p-goal {
   font-size: 14px;
 }
 body.linkedin .bg-area .custom-container {
@@ -2020,8 +2025,9 @@ body.linkedin .bg-area .custom-container {
   margin: auto;
 }
 body.linkedin .page-banner-area p.about-short {
-  max-width: 650px;
+  max-width: 750px;
   margin: 25px auto;
+  font-size: 17px;
 }
 body.linkedin .page-jurny-content p {
   max-width: 650px;
@@ -2030,12 +2036,36 @@ body.linkedin .page-jurny-content p {
 body.linkedin .single-screen-content {
   text-align: center;
 }
-@media screen and (max-width: 767px) {
+body.linkedin .page-analysis-area-2 .container {
+  display: flex;
+}
+body.linkedin .page-analysis-area-2 .container .section-title {
+  width: 50%;
+}
+body.linkedin .page-analysis-area-2 .container .section-title h4 {
+  text-align: left;
+}
+body.linkedin .page-analysis-area-2 .container .section-title p {
+  text-align: left;
+}
+body.linkedin .page-analysis-area-2 .container .page-analysis-thumb {
+  width: 50%;
+}
+@media screen and (max-width: 820px) {
   body.linkedin .page-about-list {
     max-width: 100%;
   }
   body.linkedin .page-about-wrapper {
     gap: 50px;
+  }
+  body.linkedin .page-analysis-area-2 .container {
+    display: inherit;
+  }
+  body.linkedin .page-analysis-area-2 .container .section-title {
+    width: 100%;
+  }
+  body.linkedin .page-analysis-area-2 .container .page-analysis-thumb {
+    width: 100%;
   }
 }
 
@@ -2067,7 +2097,9 @@ body.carefirst .page-statement-content p {
   margin-top: 35px;
   font-size: 15px;
 }
-body.carefirst .page-about-list h4.time-line, body.carefirst .page-about-list h4.colla, body.carefirst .page-about-list h4.p-goal {
+body.carefirst .page-about-list h4.time-line,
+body.carefirst .page-about-list h4.colla,
+body.carefirst .page-about-list h4.p-goal {
   font-size: 14px;
 }
 body.carefirst .bg-area .custom-container {
@@ -2075,8 +2107,9 @@ body.carefirst .bg-area .custom-container {
   margin: auto;
 }
 body.carefirst .page-banner-area p.about-short {
-  max-width: 650px;
+  max-width: 750px;
   margin: 25px auto;
+  font-size: 17px;
 }
 body.carefirst .page-jurny-content p {
   max-width: 650px;
@@ -2133,7 +2166,9 @@ body.yvr .page-statement-content p {
   margin-top: 35px;
   font-size: 15px;
 }
-body.yvr .page-about-list h4.time-line, body.yvr .page-about-list h4.colla, body.yvr .page-about-list h4.p-goal {
+body.yvr .page-about-list h4.time-line,
+body.yvr .page-about-list h4.colla,
+body.yvr .page-about-list h4.p-goal {
   font-size: 14px;
 }
 body.yvr .bg-area .custom-container {
@@ -2141,8 +2176,9 @@ body.yvr .bg-area .custom-container {
   margin: auto;
 }
 body.yvr .page-banner-area p.about-short {
-  max-width: 650px;
+  max-width: 750px;
   margin: 25px auto;
+  font-size: 17px;
 }
 body.yvr .page-jurny-content p {
   max-width: 650px;
@@ -2206,7 +2242,9 @@ body.colligo .page-statement-content p {
   margin-top: 35px;
   font-size: 15px;
 }
-body.colligo .page-about-list h4.time-line, body.colligo .page-about-list h4.colla, body.colligo .page-about-list h4.p-goal {
+body.colligo .page-about-list h4.time-line,
+body.colligo .page-about-list h4.colla,
+body.colligo .page-about-list h4.p-goal {
   font-size: 14px;
 }
 body.colligo .bg-area .custom-container {
@@ -2218,8 +2256,9 @@ body.colligo .page-banner-area .custom-container {
   margin: auto;
 }
 body.colligo .page-banner-area p.about-short {
-  max-width: 650px;
+  max-width: 750px;
   margin: 25px auto;
+  font-size: 17px;
 }
 body.colligo .page-jurny-content p {
   max-width: 650px;
