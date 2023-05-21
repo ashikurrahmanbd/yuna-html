@@ -299,6 +299,7 @@
     .single-pjct-content {
       a,
       p,
+      span,
       h2 {
         color: #fff;
       }
@@ -345,6 +346,9 @@
     font-size: 13px;
     transition: all 0.3s ease-in-out;
     margin-top: 20px;
+  }
+  .link-span {
+    font-size: 15px;
   }
   a {
     color: #000;
@@ -1122,13 +1126,15 @@
     font-weight: 600;
     color: #181818;
     margin-bottom: 25px;
-    display: flex;
+    display: grid;
     align-items: center;
     gap: 5px;
     &:last-child {
       margin-bottom: 0;
     }
     > span {
+      margin-top: 15px;
+      line-height: 1.4em;
       font-size: 14px;
       font-weight: 300;
     }
@@ -1180,7 +1186,7 @@
 // Statement
 .page-statement-content {
   text-align: center;
-  max-width: 675px;
+  max-width: unset;
   margin: 0 auto;
   h4 {
     font-size: 22px;
@@ -1613,15 +1619,67 @@
 .single-screen.new-email-design {
   display: flex;
   flex-direction: row;
+  .single-screen-content {
+    width: 40%;
+  }
+  .single-screen-thumb {
+    width: 60%;
+  }
 }
 
 .single-screen.optimized-authoring {
   display: flex;
   flex-direction: row;
+  .single-screen-content {
+    width: 40%;
+  }
+  .single-screen-thumb {
+    width: 60%;
+  }
 }
+
 .single-screen.auto-suggest {
   display: flex;
   flex-direction: row;
+  .single-screen-content {
+    width: 40%;
+  }
+  .single-screen-thumb {
+    width: 60%;
+  }
+}
+
+//Responsive
+@media screen and (max-width: 991px) {
+  .single-screen.new-email-design {
+    display: grid;
+    .single-screen-content {
+      width: 100%;
+    }
+    .single-screen-thumb {
+      width: 100%;
+    }
+  }
+
+  .single-screen.optimized-authoring {
+    display: grid;
+    .single-screen-content {
+      width: 100%;
+    }
+    .single-screen-thumb {
+      width: 100%;
+    }
+  }
+
+  .single-screen.auto-suggest {
+    display: grid;
+    .single-screen-content {
+      width: 100%;
+    }
+    .single-screen-thumb {
+      width: 100%;
+    }
+  }
 }
 
 //single screen new code for self-service portal: Employe updated at 11-05-2023
@@ -1663,6 +1721,89 @@
   .page-reflection-content {
     p {
       margin-bottom: 20px;
+    }
+  }
+}
+
+//linkdin page next setion
+.page-next-step-area {
+  .next-step-content {
+    .section-title {
+      h4 {
+        color: #fff;
+      }
+    }
+    .all-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-gap: 30px;
+      text-align: center;
+      .the-step {
+        img {
+        }
+        p {
+          color: #fff;
+          margin-top: 15px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// linkedin page three new section
+.page-research-roadmap-area {
+  .roadmap-image {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+.page-system-usablity-area {
+  .system-usablity-content {
+    display: flex;
+    column-gap: 25px;
+    .system-text {
+      width: 30%;
+      p {
+        margin-top: 10px;
+      }
+    }
+    .system-image {
+      width: 70%;
+    }
+  }
+}
+
+//responsive
+@media screen and (max-width: 767px) {
+  .page-system-usablity-area {
+    .system-usablity-content {
+      display: grid;
+
+      .system-text {
+        width: 100%;
+      }
+      .system-image {
+        margin-top: 50px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+//page isnght testing area
+.page-insight-user-testing-area {
+  .insight-image {
+    text-align: center;
+    margin-top: 100px;
+    max-width: 1150px;
+    margin: auto;
+    img {
+      margin-top: 70px;
+      display: block;
+      width: 100%;
+      box-shadow: 1px 1px 10px #e1ddddab;
     }
   }
 }
@@ -1908,7 +2049,7 @@ body.linkedin {
     .container {
       display: flex;
       .section-title {
-        width: 50%;
+        width: 40%;
         h4 {
           text-align: left;
         }
@@ -1917,7 +2058,7 @@ body.linkedin {
         }
       }
       .page-analysis-thumb {
-        width: 50%;
+        width: 60%;
       }
     }
   }
