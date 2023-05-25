@@ -742,7 +742,7 @@
   padding: 115px 0px;
 }
 .google-banner-wrapper {
-  max-width: 1632px;
+  max-width: 1170px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -2510,5 +2510,34 @@ body.google {
     p {
       font-size: 18px;
     }
+  }
+}
+
+//body.google main updated at 23-05-2023
+body.google-main {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .research-content {
+    .section-title {
+      text-align: center;
+    }
+    text-align: center;
+  }
+  .g-column-rev {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .google-banner-content {
+    h4 {
+      text-align: center;
+    }
+  }
+  .google-banner-thumb {
+    grid-template-columns: 1fr;
   }
 }

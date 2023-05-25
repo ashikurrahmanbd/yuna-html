@@ -1069,7 +1069,7 @@ p:last-child {
 }
 
 .google-banner-wrapper {
-  max-width: 1632px;
+  max-width: 1170px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -2507,6 +2507,29 @@ body.google p {
 }
 body.google .footer-content p {
   font-size: 18px;
+}
+
+body.google-main .container {
+  max-width: 1170px;
+}
+
+@media screen and (max-width: 991px) {
+  .research-content {
+    text-align: center;
+  }
+  .research-content .section-title {
+    text-align: center;
+  }
+  .g-column-rev {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .google-banner-content h4 {
+    text-align: center;
+  }
+  .google-banner-thumb {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
