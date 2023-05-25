@@ -1565,7 +1565,6 @@
   }
   p {
     max-width: 650px;
-    margin: 0 auto;
     margin-top: 15px;
     font-weight: 200;
   }
@@ -2040,11 +2039,6 @@ body.linkedin {
     }
   }
 
-  //ul li
-  .single-screen-content {
-    text-align: center;
-  }
-
   .page-analysis-area-2 {
     .container {
       display: flex;
@@ -2059,6 +2053,23 @@ body.linkedin {
       }
       .page-analysis-thumb {
         width: 60%;
+      }
+    }
+  }
+
+  .page-screen-area {
+    .user-flow {
+      .single-screen-content {
+        h4 {
+          text-align: center;
+        }
+        p {
+          margin: 0 auto;
+          text-align: center;
+        }
+        .des {
+          margin-top: 15px;
+        }
       }
     }
   }
@@ -2518,26 +2529,28 @@ body.google-main {
   .container {
     max-width: 1170px;
   }
+
+  .google-banner-thumb {
+    video {
+    }
+  }
+
+  .section-title {
+    p {
+      margin-bottom: 4px;
+    }
+  }
 }
 
 @media screen and (max-width: 991px) {
-  .research-content {
-    .section-title {
-      text-align: center;
-    }
-    text-align: center;
-  }
   .g-column-rev {
     display: flex;
     flex-direction: column-reverse;
   }
-
-  .google-banner-content {
-    h4 {
-      text-align: center;
-    }
-  }
   .google-banner-thumb {
     grid-template-columns: 1fr;
+    video {
+      margin: auto;
+    }
   }
 }

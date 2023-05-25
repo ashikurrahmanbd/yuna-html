@@ -1834,7 +1834,6 @@ p:last-child {
 }
 .single-screen-content p {
   max-width: 650px;
-  margin: 0 auto;
   margin-top: 15px;
   font-weight: 200;
 }
@@ -2188,9 +2187,6 @@ body.linkedin .page-jurny-content p {
   max-width: 650px;
   margin: 20px auto;
 }
-body.linkedin .single-screen-content {
-  text-align: center;
-}
 body.linkedin .page-analysis-area-2 .container {
   display: flex;
 }
@@ -2205,6 +2201,16 @@ body.linkedin .page-analysis-area-2 .container .section-title p {
 }
 body.linkedin .page-analysis-area-2 .container .page-analysis-thumb {
   width: 60%;
+}
+body.linkedin .page-screen-area .user-flow .single-screen-content h4 {
+  text-align: center;
+}
+body.linkedin .page-screen-area .user-flow .single-screen-content p {
+  margin: 0 auto;
+  text-align: center;
+}
+body.linkedin .page-screen-area .user-flow .single-screen-content .des {
+  margin-top: 15px;
 }
 @media screen and (max-width: 820px) {
   body.linkedin .page-about-list {
@@ -2512,23 +2518,20 @@ body.google .footer-content p {
 body.google-main .container {
   max-width: 1170px;
 }
+body.google-main .section-title p {
+  margin-bottom: 4px;
+}
 
 @media screen and (max-width: 991px) {
-  .research-content {
-    text-align: center;
-  }
-  .research-content .section-title {
-    text-align: center;
-  }
   .g-column-rev {
     display: flex;
     flex-direction: column-reverse;
   }
-  .google-banner-content h4 {
-    text-align: center;
-  }
   .google-banner-thumb {
     grid-template-columns: 1fr;
+  }
+  .google-banner-thumb video {
+    margin: auto;
   }
 }
 
