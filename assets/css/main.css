@@ -974,6 +974,8 @@ p:last-child {
 }
 .singel-work-thumb img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .singel-work-thumb video {
   width: 100%;
@@ -993,6 +995,9 @@ p:last-child {
   font-weight: 600;
   text-decoration: underline;
   color: #fff;
+}
+.singel-work-content p b {
+  font-weight: 600;
 }
 .singel-work-content p span {
   font-weight: 600;
@@ -2535,6 +2540,17 @@ body.google-main .section-title p {
   .google-banner-thumb video {
     margin: auto;
   }
+}
+.banner-wrapper {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+}
+
+.loaded .banner-wrapper {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.4s !important;
 }
 
 /*# sourceMappingURL=main.css.map */

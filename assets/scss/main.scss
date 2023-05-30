@@ -642,6 +642,8 @@
   overflow: hidden;
   img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   video {
     width: 100%;
@@ -659,6 +661,9 @@
       font-weight: 600;
       text-decoration: underline;
       color: #fff;
+    }
+    b {
+      font-weight: 600;
     }
     span {
       font-weight: 600;
@@ -2553,5 +2558,18 @@ body.google-main {
     video {
       margin: auto;
     }
+  }
+}
+// New update for Transition of the video loadded section
+.banner-wrapper {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+}
+.loaded {
+  .banner-wrapper {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.4s !important;
   }
 }
